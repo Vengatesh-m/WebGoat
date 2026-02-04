@@ -9,7 +9,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
         with:
-          ref: 'develop'
+          ref: 'ven-latest'
       - name: "Run Accuknox SAST: Opengrep"
         uses: accuknox/sast-scan-opengrep-action@latest
         with:
