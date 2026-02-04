@@ -1,4 +1,4 @@
-name: AccuKnox SAST Scan (2 Branches)
+name: AccuKnox SAST for main
 
 on:
   workflow_dispatch:
