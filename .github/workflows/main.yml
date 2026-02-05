@@ -1,16 +1,19 @@
-name: Accuknox SAST
+name: AccuKnox SAST for main
 
 on:
   workflow_dispatch:
-jobs: 
-  accuknox-cicd:
+
+jobs:
+  sast-scan:
     runs-on: ubuntu-latest
+
     steps:
-      - name: Checkout code
+      - name: Checkout branch
         uses: actions/checkout@v3
         with:
           ref: 'ven-dev'
-      - name: "Run Accuknox SAST: Opengrep"
+
+      - name: Run AccuKnox SAST OpenGrep
         uses: accuknox/sast-scan-opengrep-action@latest
         with:
           accuknox_endpoint: ${{ secrets.ACCUKNOX_ENDPOINT }}
