@@ -1,4 +1,4 @@
-name: AccuKnox SAST for main
+name: AccuKnox SAST for dev
 
 on:
   workflow_dispatch:
