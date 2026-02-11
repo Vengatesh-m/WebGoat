@@ -11,7 +11,7 @@ jobs:
       - name: Checkout branch
         uses: actions/checkout@v3
         with:
-          ref: 'ven-dev'
+          ref: 'feb-11-test'
 
       - name: Run AccuKnox SAST OpenGrep
         uses: accuknox/sast-scan-opengrep-action@latest
