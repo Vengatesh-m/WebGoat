@@ -18,7 +18,7 @@ jobs:
         with:
           accuknox_endpoint: ${{ secrets.ACCUKNOX_ENDPOINT }}
           accuknox_token: ${{ secrets.ACCUKNOX_TOKEN }}
-          accuknox_label: 'opengmain'
+          accuknox_label: 'openmain'
           soft_fail: "true"
       
          
