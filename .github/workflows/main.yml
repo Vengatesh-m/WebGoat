@@ -1,4 +1,4 @@
-name: AccuKnox SAST for dev
+name: AccuKnox SAST for demo
 
 on:
   workflow_dispatch:
@@ -11,12 +11,12 @@ jobs:
       - name: Checkout branch
         uses: actions/checkout@v3
         with:
-          ref: 'feb-11-test'
+          ref: 'demotest'
 
       - name: Run AccuKnox SAST OpenGrep
         uses: accuknox/sast-scan-opengrep-action@latest
         with:
           accuknox_endpoint: ${{ secrets.ACCUKNOX_ENDPOINT }}
           accuknox_token: ${{ secrets.ACCUKNOX_TOKEN }}
-          accuknox_label: ${{ vars.LABEL }}
+          accuknox_label: 'opentest'
           soft_fail: "true"
